@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht Contact</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="Images/Logo_V02.svg" alt="Logo van Chrisieee">
+        </div>
+        <div class="empty"></div>
+        <a href="Index.html">Home</a>
+        <a href="https://www.youtube.com/channel/UCvPCx7FbCUgcBQjNv-5_0NA?view_as=subscriber"
+            target="_blank">Youtube</a>
+        <a href="https://www.twitch.tv/chrisieee" target="_blank">Twitch</a>
+        <a href="https://www.instagram.com/chrisieeeee/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@chrisieee_xd" target="_blank">Tiktok</a>
+        <a href="https://www.etsy.com/nl/shop/ChrisieeeNL" target="_blank">Etsy</a>
+    </nav>
+    <main>
+        <header>
+            <div>
+                <h1>Contact</h1>
+            </div>
+            <p>Mocht je een vraag hebben of meer willen weten wat Chrisieee allemaal doet? Neem dan contact op! De vraag
+                kan van alles zijn of je nou meer wilt weten of misschien
+                wel interesse hebt in een samenwerking of een persoonlijk design nodig hebt laat het vooral weten! Wie
+                weet kunnen we iets voor elkaar betekenen</p>
+        </header>
+        <section class="form">
+            <h2 id="form-text">Form</h2>
+            <form action="Thanks.html">
+                <div class="two-columns">
+                    <div class="text">
+                        <label for="firstName">Voornaam</label>
+                        <input type="text" placeholder="Henk" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="text">
+                        <label for="lastName">Achternaam</label>
+                        <input type="text" placeholder="de Jong" name="lastName" id="lastName" required>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="henk@gmail.com" name="email" id="email" required>
+                </div>
+                <div class="two-columns">
+                    <div class="text">
+                        <label for="placeOfResedents">Woonplaats</label>
+                        <input type="text" placeholder="Dordrecht" name="placeOfResedents" id="placeOfResedents" required>
+                    </div>
+                    <div class="date">
+                        <label for="dateOfBirth">Geboortedatum</label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                    </div>
+                </div>
+                <div class="text">
+                    <label for="subject">Onderwerp</label>
+                    <select name="subject" id="subject" required>
+                        <option value="" disabled selected>Kies een onderwerp</option>
+                        <option value="twitch">Twitch</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="etsy">Etsy</option>
+                        <option value="designs">Design Opdracht</option>
+                    </select>
+                </div>
+                <div class="text">
+                    <label for="message">Bericht</label>
+                    <textarea rows="7" cols="38" name="message" id="message" required></textarea>
+                </div>
+                <p>Inschrijven voor de Nieuwsbrief</p>
+                <div class="radio">
+                    <input type="radio" id="yes" name="yes" value="yes">
+                    <label for="yes">Ja</label>
+                    <input type="radio" id="no" name="no" value="no">
+                    <label for="no">Nee</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">Ik ga akkoord met de algemene voorwaarden</label>
+                </div>
+                <div class="text">
+                    <button type="submit">Versturen</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <div>
+                <img src="Images/Logo_V02.svg" alt="Logo van Chrisieee">
+            </div>
+            <div>
+                <p>Copyright 2024 Chrisieee</p>
+            </div>
+            <div class="empty"></div>
+            <div>
+                <a href="">Privacyverklaring</a>
+                <a href="">Algemene voorwaarden</a>
+                <a href="">Cookiebeleid</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --navAndFooter: #B5C8C0;
+    --border: 2px solid #5a8473;
+    --white: white;
+    --websiteWidth: 5vh 7vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Text */
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    margin: 2vh 0;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p, a, label, text, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+/* Nav */
+nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 7vw;
+    border-bottom: var(--border);
+    background-color: var(--navAndFooter);
+}
+
+.empty {
+    flex: 3;
+}
+
+nav img {
+    width: 60px;
+    padding: 5px 0;
+}
+
+#logo img {
+    animation: spinning-logo 2s linear;
+}
+
+@keyframes spinning-logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }   
+}
+
+nav div {
+    flex: 1;
+}
+
+nav a, .button, .website {
+    padding: 5px 10px;
+    border: var(--border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease-in;
+}
+
+.button:hover, nav a:hover, .website:hover {
+    background-color: #5a8473;
+    border: var(--border);
+    color: var(--white);
+    padding: 7px 12px;
+}
+
+.button, .website {
+    width: 10vw;
+    margin: 1vw auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--websiteWidth);
+    border-bottom: var(--border);
+    background-image: url(../Images/Achtergrond.svg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 15%;
+    color: var(--white);
+}
+
+.button, button, .website {
+    padding: 5px 10px;
+    border: var(--border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--white);
+    transition: all 0.4s ease-in;
+}
+
+.website {
+    width: 15%;
+}
+
+button:hover{
+    background-color: #5a8473;
+    border: var(--border);
+    color: var(--white);
+    padding: 7px 12px;
+}
+
+/* Markten */
+section {
+    padding: 2vw 7vw var(--websiteWidth);
+}
+
+#product-container {
+    text-align: center;
+}
+
+#products {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vh;
+}
+
+.left, .middle, .right {
+    border: var(--border);
+    border-radius: 5px;
+    background-color: #D6E1DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+article:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+}
+
+.left p, .middle p, .right p, 
+.left button, .middle button, .right button {
+    margin: 1vh 1vw;
+}
+
+/* Images articles */
+.heading-image {
+    align-items: center;
+    color: var(--white);
+    border-bottom: var(--border);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 5vh 2vw;
+}
+
+.left .heading-image {
+    background-image: url(../Images/Screenshot\ 2024-09-27\ 152504.png);
+}
+
+.middle .heading-image {
+    background-image: url(../Images/Screenshot\ 2024-09-27\ 153103.png);
+}
+
+.right .heading-image {
+    background-image: url(../Images/Screenshot\ 2024-09-27\ 194127.png);
+    color: black;
+}
+
+/* Sterren */
+.stars {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div .stars {
+    width: 20vw;
+    padding-top: 1vw;
+}
+
+/* footer */
+footer {
+    padding: 1vh 7vw;
+    border-top: var(--border);
+    background-color: var(--navAndFooter);
+}
+
+footer img {
+    width: 60px;
+    padding: 5px 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div .footer-text {
+    flex: 1;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: var(--white)
+}
+
+/* Contact Pagina */
+h2#form-text {
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form > div {
+    margin-bottom: 1vw;
+}
+
+.two-columns {
+    display: flex;
+    gap: 1vw;
+}
+
+.text, .email, .date {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.text input, .email input, .date input, .text select {
+    width: 100%;
+    padding: 5px;
+}
+
+.text input:user-invalid, .email input:user-invalid, .date input:user-invalid, 
+.text select:user-invalid, .text textarea:user-invalid {
+    border: 1px dotted red;
+}
+
+.text input:user-valid, .email input:user-valid, .date input:user-valid, 
+.text select:user-valid, .text textarea:user-valid {
+    border: 1px dotted green;
+}
+
+.radio {
+    display: flex;
+    gap: 2vw;
+}
+
+form button {
+    background-color: #5a8473;
+    border: var(--border);
+    color: var(--white);
+}
+
+form button:hover {
+    padding: 5px 10px;
+    border: var(--border);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--white);
+}
+
+/* Bedankt Pagina */
+.thanks {
+    height: 60vh;
+    text-align: center;
+    align-content: center;
+}
+
+@media (max-width: 740px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1vh;
+        position: unset;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav img {
+        padding: 2px 0;
+    }
+
+    .website, .button {
+        width: 40vw;
+    }
+
+    #products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-text {
+        display: block;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
